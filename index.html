@@ -16,8 +16,8 @@
     tailwind.config = {
       theme: {
         screens:{
-          // sm: "640px",
-          
+          sm: "640px",
+          md: "1007px",
         },
         extend: {
           colors: {
@@ -40,10 +40,13 @@
 
   <!-- navbar -->
   <nav class="flex flex-row items-center justify-around h-[75px]">
+    <div class="inline-block cursor-pointer md:hidden">
+      <i class="fa-solid fa-bars"></i>
+    </div>
     <div>
       <img class="h-[50px]" src="./paytm_logo.png" alt="" />
     </div>
-    <div class="flex gap-x-8 font-semibold">
+    <div class="hidden md:flex gap-x-8 font-semibold">
       <a class="" href="#">Paytm For Consumer</a>
       <a class="" href="#">Paytm For Business</a>
       <a class="" href="#">Company</a>
@@ -77,12 +80,12 @@
 
   <!-- section -->
   <div class="flex flex-row mt-24">
-    <div class="text-start items-center w-2/5 ml-[30px]">
+    <div class="items-center md:w-2/5 ml-[30px] flex flex-col text-center justify-center md:items-start md:text-start">
       <img class="h-[70px] mb-10" src="./left-img.png" alt="" />
       <h1 class="text-[50px] font-bold leading-[55px] mb-4">
         India's Most-loved Payments App
       </h1>
-      <p class="text-[19px] font-[500] mb-8">
+      <p class="text-[21px] font-semibold mb-8">
         Recharge & pay bills, book flights & movie tickets, open a savings
         account, invest in stocks & mutual funds, and do a lot more.
       </p>
@@ -106,18 +109,18 @@
         </button>
       </div>
     </div>
-    <div class="inline-block w-3/5">
+    <div class="hidden md:w-3/5 md:inline-block ">
       <img class="h-[450px] absolute right-0" src="./phone-img.webp" alt="" />
     </div>
 
 
     <!-- sectionae -->
   </div>
-  <div class=" bg-myblue mt-32 p-[30px] h-[350px] flex flex-col justify-center">
+  <div class=" bg-myblue mt-[130px] sm:mt-[160px] md:mt-32 p-[50px]  flex flex-col justify-center">
     <h1 class="text-[35px] font-[700] mb-[18px] text-white">
       Recharge & Pay Bills on Paytm.
     </h1>
-    <div class="grid grid-cols-7 gap-x-7">
+    <div class="md:grid grid-cols-7 md:gap-8 flex flex-wrap justify-center gap-12 ">
       <div class="flex flex-col justify-center gap-4 h-[180px] p-4 hover:bg-bluee hover:rounded-lg">
         <img class="h-[55px] w-[55px]" src="./mobile.png" alt="" />
         <div class="flex flex-col text-white font-semibold">
@@ -176,12 +179,14 @@
       </div>
     </div>
   </div>
+
+
   <!-- new section -->
-  <div class="bg-darkblue p-[30px] h-[350px] flex flex-col justify-center">
+  <div class="bg-darkblue p-[50px] flex flex-col justify-center">
     <h1 class="text-[35px] font-[700] mb-[18px] text-white">
       Book & Buy on Paytm.
     </h1>
-    <div class="grid grid-cols-7 gap-x-7">
+    <div class="md:grid grid-cols-7 md:gap-8 flex flex-wrap justify-center gap-16">
       <div class="flex flex-col justify-center gap-4 h-[180px] p-4 hover:bg-newblue hover:rounded-lg">
         <img class="h-[55px] w-[55px]" src="./movie.png" alt="" />
         <div class="flex flex-col text-white font-semibold">
@@ -233,6 +238,9 @@
       </div>
     </div>
   </div>
+
+
+
   <!-- <section> -->
   <section class="bg-grey h-[450vh]">
     <h1 class="text-[47px] font-[700] pt-24 pl-[130px] pb-[30px]">Paytm Payments instruments</h1>
@@ -273,7 +281,7 @@
       </div>
     </div>
 
-
+    <!-- one more sectoinaes -->
     <div class="container flex bg-white rounded-lg mx-auto w-4/5 p-12 items-center mt-[45px]">
       <div class="w-1/2 flex  flex-col  text-black text-start p-8">
         <div class="flex items-center gap-3 mb-[40px]">
